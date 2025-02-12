@@ -1,0 +1,367 @@
+:root {
+    --light: #3c3836; /* Gruvbox dark background */
+    --dark: #282828; /* Even darker elements */
+    --base: #504945; /* Mid-tone for UI elements */
+    --lighter: #665c54; /* Slightly lighter backgrounds */
+    --foreground: #ebdbb2; /* Primary text color */
+    --foreground-accent: #ebdbb2; /* Lighter foreground */
+    --inputs-default: rgba(235, 219, 178, 0.05); /* Inputs BG */
+    --inputs-focus: rgba(235, 219, 178, 0.07); /* Focused Inputs */
+    --inputs-border: rgba(235, 219, 178, 0.08); /* Borders */
+    --menu-link: #d5c4a1; /* Default menu text */
+    --menu-link-hover: #ebdbb2; /* Hover menu text */
+  }
+  html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  background: var(--light);
+  color: var(--foreground);
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  color: var(--foreground);
+}
+
+h2 {
+  font-size: 46px;
+  font-weight: normal;
+}
+
+h3 {
+  font-size: 15px;
+  margin: 60px 0 30px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: #fabd2f;
+  text-transform: uppercase;
+}
+
+p {
+  margin: 0 0 15px;
+}
+a {
+    color: var(--menu-link);
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: var(--menu-link-hover);
+    text-decoration: underline;
+  }
+  table {
+    border: 0;
+    margin: 15px 0 0;
+  }
+  
+  th,
+  td {
+    border: 0;
+    padding: 16px;
+    font-size: 16px;
+    color: var(--foreground);
+  }
+  
+  th {
+    background: var(--base);
+    color: #fabd2f; /* Gruvbox yellow */
+    font-weight: normal;
+  }
+  
+  tbody tr:hover td,
+  tbody tr:hover th {
+    background: var(--lighter);
+  }
+  
+  thead td,
+  thead th {
+    background: var(--dark);
+    padding: 0.2em 0.5em;
+    text-align: left;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  }
+  
+  thead th a {
+    color: var(--foreground-accent);
+    font-weight: bold;
+  }
+  input,
+textarea {
+  border: 0;
+  padding: 12px 16px;
+  font-size: 16px;
+  color: var(--foreground);
+  background: var(--inputs-default);
+  border-radius: 2px;
+  transition: background 0.24s;
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--inputs-focus);
+}
+input[type='submit'],
+input[type='button'] {
+  border: 0;
+  padding: 0 40px;
+  cursor: pointer;
+  background: #fabd2f; /* Gruvbox yellow */
+  color: #282828; /* Text contrast */
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 42px;
+  box-shadow: 0 3px 20px 0 rgba(250, 189, 47, 0.06);
+}
+
+input[type='submit']:hover,
+input[type='button']:hover {
+  box-shadow: 0 3px 25px 1px rgba(250, 189, 47, 0.12);
+}
+input[type='checkbox'],
+input[type='radio'] {
+  width: 18px;
+  height: 18px;
+  background: transparent;
+  border: 2px solid var(--inputs-border);
+  border-radius: 2px;
+  appearance: none;
+  cursor: pointer;
+  margin: 3px 6px;
+  transition: border-color 0.24s;
+}
+
+input[type='checkbox']:checked,
+input[type='radio']:checked {
+  background-color: var(--foreground);
+  border-color: var(--foreground);
+}
+
+input[type='checkbox']:checked::before,
+input[type='radio']:checked::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #282828;
+  font-size: 13px;
+}
+.jush {
+    color: var(--foreground);
+  }
+  
+  .jush a {
+    color: #fabd2f;
+  }
+  
+  .jush-php_quo,
+  .jush-quo,
+  .jush-apo {
+    color: #d79921;
+  }
+  
+  .jush-num {
+    color: var(--foreground);
+  }
+  .error {
+    background: #cc241d;
+    color: var(--foreground);
+  }
+  
+  .message {
+    color: var(--foreground);
+    background: rgba(235, 219, 178, 0.07);
+    font-size: 26px;
+  }
+  .footer {
+    background: var(--dark);
+    border-top: 1px solid var(--light);
+  }
+  #tables::-webkit-scrollbar {
+    background: transparent;
+    width: 6px;
+  }
+  
+  #tables::-webkit-scrollbar-track {
+    background: var(--dark);
+  }
+  
+  #tables::-webkit-scrollbar-thumb {
+    background: rgba(235, 219, 178, 0.2);
+    border-radius: 10px;
+  }
+  
+  #tables::-webkit-scrollbar-thumb:hover {
+    background: rgba(235, 219, 178, 0.4);
+  }
+  input[type='submit'],
+input[type='button'] {
+  border: 0;
+  padding: 0 40px;
+  cursor: pointer;
+  background: #fabd2f; /* Gruvbox yellow */
+  color: #282828;
+  font-weight: bold;
+  font-size: 12px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  line-height: 42px;
+  box-shadow: 0 3px 20px 0 rgba(250, 189, 47, 0.06);
+}
+
+input[type='submit']:hover,
+input[type='button']:hover {
+  box-shadow: 0 3px 25px 1px rgba(250, 189, 47, 0.12);
+  background: #d79921; /* Slightly darker Gruvbox yellow */
+}
+
+input[type='submit'][disabled],
+input[type='button'][disabled] {
+  background: rgba(0, 0, 0, 0.13);
+  color: rgba(255, 255, 255, 0.2);
+  cursor: not-allowed;
+}
+.jush {
+    color: var(--foreground);
+  }
+  
+  .jush a {
+    color: #fabd2f; /* Gruvbox yellow */
+  }
+  
+  .jush-sql a,
+  .jush-sql_code a {
+    font-weight: normal;
+  }
+  
+  .jush-bac,
+  .jush-php_bac,
+  .jush-bra {
+    color: #fe8019; /* Gruvbox bright orange */
+  }
+  
+  .jush-php_quo,
+  .jush-quo,
+  .jush-apo {
+    color: #d79921; /* Gruvbox mustard */
+  }
+  
+  .jush-num,
+  .jush-clr {
+    color: var(--foreground);
+  }
+  input,
+textarea {
+  border: 1px solid var(--inputs-border);
+  padding: 12px 16px;
+  font-size: 16px;
+  color: var(--foreground);
+  background: var(--inputs-default);
+  border-radius: 2px;
+  transition: background 0.24s, border-color 0.24s;
+}
+
+input:focus,
+textarea:focus {
+  background-color: var(--inputs-focus);
+  border-color: #fabd2f; /* Gruvbox yellow */
+}
+tbody tr:hover td,
+tbody tr:hover th {
+  background: #504945; /* Gruvbox mid-tone */
+}
+
+.js .checkable .checked td,
+.js .checkable .checked th {
+  background: #665c54; /* Gruvbox selection */
+}
+
+.js .checkable .checked td:first-child {
+  background: linear-gradient(to right, #fabd2f 2px, var(--dark) 2px, var(--dark) 100%);
+}
+.error {
+    color: var(--foreground);
+    background: #cc241d; /* Gruvbox red */
+    box-shadow: 0 10px 30px rgba(204, 36, 29, 0.1);
+  }
+  
+  .error b {
+    font-weight: bold;
+  }
+  .footer {
+    background: var(--dark);
+    border-top: 1px solid var(--light);
+  }
+  
+  .footer > div {
+    margin-left: -61px;
+    background: var(--dark);
+    border-top: 1px solid var(--base);
+    padding: 12px 0 12px 61px;
+  }
+
+  #logins a,#tables a,#tables span {
+    background: #282828;
+}
+
+.odd td {
+    background: #514946;
+}
+
+#breadcrumb {
+    white-space: nowrap;
+    position: absolute;
+    top: 0;
+    left: 21em;
+    background: #3c3835;
+    height: 2em;
+    line-height: 1.8em;
+    padding: 0 1em;
+    margin: 0 0 0 -18px;
+}
+
+select {
+    background: #3c3836; /* Dark background */
+    color: #ebdbb2; /* Gruvbox foreground text */
+    border: 1px solid #7c6f64; /* Gruvbox border */
+    padding: 10px 16px; /* More padding for a larger appearance */
+    font-size: 16px; /* Match button font size */
+    height: 42px; /* Same height as buttons */
+    border-radius: 4px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    line-height: normal;
+  }
+  
+  select:focus {
+    border-color: #fabd2f; /* Yellow border on focus */
+    background: #504945; /* Slightly lighter background */
+  }
+  
+  option {
+    background: #282828; /* Darker dropdown options */
+    color: #ebdbb2; /* Gruvbox text */
+  }
+  
+a:visited {
+    color: #458587;
+}
