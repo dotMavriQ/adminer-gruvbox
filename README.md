@@ -28,7 +28,7 @@ These instructions have been tested with [docker-adminer](https://hub.docker.com
 2. In your **Dockerfile**, add the following line:
 
 ```dockerfile
-ADD ./adminer.css /var/www/html/adminer.css
+ADD ./design.css /var/www/html/adminer.css
 ```
 
 3. Restart your **Adminer** container to apply the new theme.
