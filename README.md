@@ -16,19 +16,19 @@ This theme is still being refined, and some elements may still inherit styles fr
 
 ### 🔧 Manual Installation
 
-1. **Download** `adminer.css` from this repo.
-2. **Rename** the file to `adminer.css` (if it isn't already).
+1. **Download** `design.css` from this repo.
+2. **Rename** the file to `design.css` (if it isn't already).
 3. **Place** it in the same directory as your `adminer.php` file.
 
 ### 🐳 Docker Setup
 
 These instructions have been tested with [docker-adminer](https://hub.docker.com/_/adminer/):
 
-1. Copy the themed CSS (`adminer.css`) into your directory.
+1. Copy the themed CSS (`design.css`) into your directory.
 2. In your **Dockerfile**, add the following line:
 
 ```dockerfile
-ADD ./design.css /var/www/html/adminer.css
+ADD ./design.css /var/www/html/design.css
 ```
 
 3. Restart your **Adminer** container to apply the new theme.
